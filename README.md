@@ -1,4 +1,4 @@
-# NuxtStart - a boilerplate for a packed featured Nuxt install
+# NuxtStart - a boilerplate for a pack featured Nuxt install
 
 ** Wait before using this it is not yet finished **
 
