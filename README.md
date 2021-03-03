@@ -1,5 +1,7 @@
 # NuxtStart - a boilerplate for a packed featured Nuxt install
 
+** Wait before using this it is not yet finished **
+
 In case you don't know NUXT, it is a frontend framework, based on vuejs, that will ease the way you build jamstack sites, websites or webapps.
 
 For detailed explanation on Nuxt, check out [Nuxt.js docs](https://nuxtjs.org).
