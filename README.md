@@ -81,3 +81,7 @@ These are the presets I've chosen
 - and static jamstack deployment
 
 Check the docs for more information
+
+# Release notes
+
+- init version..do not use right away in prod
