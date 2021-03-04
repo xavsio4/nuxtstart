@@ -14,7 +14,7 @@ This very documentation is generated using [Docsify](https://docsify.js.org/). T
 - Nuxt Content included
 - Bootstrap Vue ready
 - FontAwesome Ready
-- SASS interpreter ready
+- SASS loader ready with custom.scss file
 - I18N ready
 - Cookie control module ready
 - Nuxt color mode included
@@ -32,6 +32,7 @@ This very documentation is generated using [Docsify](https://docsify.js.org/). T
 - Registration form
 - .env usage
 - onLine OffLine test within the default layout
+- TopNav component included for navbar example
 
 Don't worry, we are going to review each module one by one later in the doc.
 
@@ -114,7 +115,7 @@ You can make a multi lingual frontend out of the box. The language files are org
 And this is how you use it on your pages/components
 
 ```html
-{{ $t('hello') }}
+{{ $t('hello') }} //where 'hello' is defined in the language files
 ```
 
 There is a lang switcher within the topNav component. More information at [Nuxt/I18n](https://i18n.nuxtjs.org/)
@@ -138,5 +139,29 @@ More about bootstrap vue at
 ### Nuxt/content
 
 The about page is a simple implementation of the Nuxt Content feature. Look at it and learn more here [Nuxt/Content](https://content.nuxtjs.org/)
+
+### css customization
+
+For the sake of example, I've put in assets two ways to do it.
+
+- via a simple css file : assets/custom.css
+- via a scss file: assets/custom.scss
+
+As nuxstart is scss ready with a scss loader, I suggest you use sass for styling.
+
+# Here goes some usefull snippets
+
+Add a bootstrap toast notification [Bootstrap vue](https://bootstrap-vue.org/)
+
+```javascript
+this.$bvToast.toast('Item deleted', {
+  id: 'offline',
+  toaster: 'b-toaster-bottom-right',
+  noCloseButton: false,
+  solid: true,
+  noAutoHide: false,
+  variant: 'danger',
+})
+```
 
 \*\*\* to be continued
