@@ -1,24 +1,22 @@
 <template>
   <div class="container">
-    <div>
+    <div id="home">
       <Logo />
       <h1 class="title">
         nuxtstart
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
+        <a class="btn btn-primary"
+          href="https://xavsio4.github.io/nuxtstart/#/"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
         >
-          Documentation
+          NuxtStart Documentation
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
+        <a class="btn btn-primary"
+          href="https://github.com/xavsio4/nuxtstart"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
         >
           GitHub
         </a>
@@ -32,12 +30,8 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#home
+{
   text-align: center;
 }
 
@@ -59,15 +53,4 @@ export default {}
   letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

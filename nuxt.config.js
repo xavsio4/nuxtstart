@@ -17,6 +17,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/custom.css',
+    '@/assets/scss/custom.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -157,34 +159,6 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
-   /**
-   * I18N Configuration
-   */
-  i18n: {
-    langDir: 'lang/',
-    defaultLocale: 'en',
-    lazy: true,
-    locales: [{
-      name: 'Español',
-      code: 'es',
-      iso: 'es-ES',
-      file: 'es.js'
-    },
-    {
-      name: 'English',
-      code: 'en',
-      iso: 'en-US',
-      file: 'en.js'
-    },
-    {
-      name: 'Français',
-      code: 'fr',
-      iso: 'fr-FR',
-      file: 'fr.js'
-    }
-    ]// locales
-
-  }, // /i18N configuration
 
   // auth configuration
   auth: {
@@ -193,7 +167,7 @@ export default {
       login: '/login',
       logout: '/',
       callback: '/login',
-      home: '/dashboard'
+      home: '/index'
     },
     strategies: {
       local: {

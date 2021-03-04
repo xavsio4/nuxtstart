@@ -6,7 +6,7 @@ For detailed explanation on Nuxt, check out [Nuxt.js docs](https://nuxtjs.org).
 
 and if you don't know vuejs, go here [vueJs docs](https://vuejs.org)
 
-This very documentation is generated using [Docsify](https://docsify.js.org/). The main files are found within the /docs folder. This is the README.MD file.
+This very documentation is generated using [Docsify](https://docsify.js.org/). The main files are found within the /docs folder. This is the README.MD file. The theme used for the doc is this one [Dark-Light Theme](https://docsify-darklight-theme.boopathikumar.me/#/)
 
 ## Features overview
 
@@ -31,6 +31,7 @@ This very documentation is generated using [Docsify](https://docsify.js.org/). T
 - Login form
 - Registration form
 - .env usage
+- onLine OffLine test within the default layout
 
 Don't worry, we are going to review each module one by one later in the doc.
 
@@ -108,10 +109,34 @@ For more information, visit the repository [Nuxt/Moments](https://github.com/nux
 
 ### Internatianalization (I18n)
 
-You can make a multi lingual frontend out of the box. The language files are organized in the lang folder. We've included 3 languages but you can add all you want.
+You can make a multi lingual frontend out of the box. The language files are organized in the lang folder. We've included 3 languages but you can add all you want. Don't forget to adjust settings in the nuxtconfig file.
 
 And this is how you use it on your pages/components
 
 ```html
-
+{{ $t('hello') }}
 ```
+
+There is a lang switcher within the topNav component. More information at [Nuxt/I18n](https://i18n.nuxtjs.org/)
+
+### FontAwesome
+
+By default, within the nuxtconfig file, I've imported only a few icons. I do prefer that way in order to avoid loading icons that you are never going to use. Check on the fontawesome page the icons you need and follow the pattern in the nuxtconfig file.
+
+To use the icon on a page/component use the following snippet.
+
+```html
+<fa :icon="['fas', 'pen']" />
+```
+
+### TopNav component
+
+This is just an example of implementation of the bootstrap navbar. It is just there as an example and it is included in the default layout. That component has also the lang switcher.
+
+More about bootstrap vue at
+
+### Nuxt/content
+
+The about page is a simple implementation of the Nuxt Content feature. Look at it and learn more here [Nuxt/Content](https://content.nuxtjs.org/)
+
+\*\*\* to be continued

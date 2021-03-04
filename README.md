@@ -33,6 +33,9 @@ This very documentation is generated using [Docsify](https://docsify.js.org/). T
 - Login form
 - Registration form
 - .env usage
+- online/offline check in default layout
+- Documentation using docsify in /docs folder
+- scss support with custom.scss and added custom.css flavour
 
 Don't worry, we are going to review each module one by one later in the doc.
 
@@ -80,8 +83,9 @@ These are the presets I've chosen
 - SSR
 - and static jamstack deployment
 
-Check the docs for more information
+Check the docs for extended information [NuxtStart Docs](https://xavsio4.github.io/nuxtstart/#/)
 
 # Release notes
 
-- init version..do not use right away in prod
+- 04/03/2021 - added scss support
+- 03/03/2021 - init version..do not use right away in prod
